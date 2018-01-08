@@ -12,11 +12,11 @@ public class Main {
 
         Block premier = new Block(contrats, 1);
 
-        premier.toHash();
+        int x = premier.toHash();
 
 
 
-        String encrypted = Encrypt.getSha256("test");
+        String encrypted = Encrypt.getSha256(String.valueOf(x));
         System.out.println(encrypted);
     }
 }

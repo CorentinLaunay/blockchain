@@ -25,7 +25,7 @@ public class Block {
         this.index = index;
     }
 
-    public void toHash() {
-        System.out.println(this.contrat.hashCode());
+    public int toHash() {
+        return this.contrat.hashCode();
     }
 }
