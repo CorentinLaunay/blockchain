@@ -1,4 +1,4 @@
-package com.miage.fr;
+package com.miage.fr.init;
 
 public class Main {
 
