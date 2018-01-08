@@ -2,9 +2,9 @@ package com.miage.fr.block;
 
 public class Block {
     private String[] contrat;
-    private int index;
+    private long index;
 
-    public Block(String[] pcontrat, int pindex) {
+    public Block(String[] pcontrat, long pindex) {
         this.contrat = pcontrat;
         this.index = pindex;
     }
@@ -17,11 +17,11 @@ public class Block {
         this.contrat = contrat;
     }
 
-    public int getIndex() {
+    public long getIndex() {
         return index;
     }
 
-    public void setIndex(int index) {
+    public void setIndex(long index) {
         this.index = index;
     }
 
