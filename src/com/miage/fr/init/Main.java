@@ -5,13 +5,16 @@ import com.miage.fr.block.Block;
 import com.miage.fr.block.Blockchain;
 import com.miage.fr.encrypt.Encrypt;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
-        String[] contrats = {"Coco vend 1", "Jeje achete 2", "Jeje perd tout"};
+        Block block = new Block();
+        block.addContrat("Contrat 1");
+        block.addContrat("Contrat 1");
 
-        Block block = new Block(contrats, 0);
-        Blockchain blockchain = new Blockchain(block, 5);
+        Blockchain blockchain = new Blockchain(block, 2);
         blockchain.mine();
 
     }
