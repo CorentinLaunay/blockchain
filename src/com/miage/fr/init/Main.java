@@ -10,13 +10,11 @@ public class Main {
         String[] contrats = {"Coco vend 1", "Jeje achete 2", "Jeje perd tout"};
 
 
-        Block premier = new Block(contrats, 1);
+        for (int i = 0; i < 150; i++){
+            Block premier = new Block(contrats, i);
+            String encrypted = Encrypt.getSha256(premier.toString());
+            System.out.println(encrypted);
+        }
 
-        int x = premier.toHash();
-
-
-
-        String encrypted = Encrypt.getSha256(String.valueOf(x));
-        System.out.println(encrypted);
     }
 }

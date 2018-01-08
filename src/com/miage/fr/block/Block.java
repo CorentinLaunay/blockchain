@@ -25,6 +25,13 @@ public class Block {
         this.index = index;
     }
 
+
+    @Override
+    public String toString()
+    {
+        return getContrat() +""+getIndex();
+    }
+
     public int toHash() {
         return this.contrat.hashCode();
     }
