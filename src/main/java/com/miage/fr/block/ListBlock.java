@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public final class ListBlock {
     private static ArrayList<Block> myList = new ArrayList<Block>();
+    private static ArrayList<Block> finishedBlock = new ArrayList<Block>();
 
     public ArrayList<Block> getMyList() {
         return myList;
@@ -13,6 +14,10 @@ public final class ListBlock {
 
     public void setMyList(ArrayList<Block> myList) {
         myList = myList;
+    }
+
+    public static void addToFinishedBlock(Block block){
+        finishedBlock.add(block);
     }
 
     public static void addToBlock(Contrat pcontrat){
