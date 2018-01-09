@@ -4,6 +4,7 @@ package com.miage.fr.init;
 import com.miage.fr.contrat.Contrat;
 import com.miage.fr.user.ListMiner;
 import com.miage.fr.user.Miner;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.ArrayList;
 
@@ -20,20 +21,22 @@ public class Main {
 
 
         ArrayList<Contrat> listeContrat = new ArrayList<Contrat>();
-        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
-        listeContrat.add(new Contrat("Corentin les recois"));
-        listeContrat.add(new Contrat("Luke est pauvre"));
-        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
-        listeContrat.add(new Contrat("Corentin les recois"));
-        listeContrat.add(new Contrat("Luke est pauvre"));
-        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
-        listeContrat.add(new Contrat("Corentin les recois"));
-        listeContrat.add(new Contrat("Luke est pauvre"));
-        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
-        listeContrat.add(new Contrat("Corentin les recois"));
-        listeContrat.add(new Contrat("Luke est pauvre"));
-        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
-        listeContrat.add(new Contrat("Corentin les recois"));
-        listeContrat.add(new Contrat("Luke est pauvre"));
+
+        String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~`!@#$%^&*()-_=+[{]}\\|;:\'\",<.>/?";
+        for (int i = 1; i < 15 ; i++)
+        {
+            String pwd = RandomStringUtils.random( 15, characters );
+            listeContrat.add(new Contrat(pwd));
+
+            System.out.println("------------ INDEX = " + i + "------------");
+            System.out.println("------------ GENERATION ------------");
+            System.out.println("------------ CONTRAT = " + pwd + "------------");
+
+        }
+
+        for (Miner aminer : ListMiner.listOfMiners) {
+            System.out.println(aminer.getBitcoins());
+        }
     }
+
 }

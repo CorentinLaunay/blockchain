@@ -32,7 +32,7 @@ public final class ListBlock {
         }
         else
         {
-            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 4);
+            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 5);
             blockchain.mine();
             myList.add(new Block());
             Block myblock = myList.get(myList.size()-1);
