@@ -16,17 +16,22 @@ public class Main {
 
         ListBlock myBlockList = new ListBlock();
         ArrayList<Contrat> listeContrat = new ArrayList<>();
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
-        listeContrat.add(new Contrat("test"));
+        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
+        listeContrat.add(new Contrat("Corentin les recois"));
+        listeContrat.add(new Contrat("Luke est pauvre"));
+        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
+        listeContrat.add(new Contrat("Corentin les recois"));
+        listeContrat.add(new Contrat("Luke est pauvre"));
+        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
+        listeContrat.add(new Contrat("Corentin les recois"));
+        listeContrat.add(new Contrat("Luke est pauvre"));
+        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
+        listeContrat.add(new Contrat("Corentin les recois"));
+        listeContrat.add(new Contrat("Luke est pauvre"));
+        listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
+        listeContrat.add(new Contrat("Corentin les recois"));
+        listeContrat.add(new Contrat("Luke est pauvre"));
+
 
 
     }

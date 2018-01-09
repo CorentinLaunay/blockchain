@@ -17,6 +17,8 @@ public class Blockchain {
     }
 
     public void mine(){
+        long debut = System.currentTimeMillis();
+        System.out.println("Début du minage du block car rempli de contrat");
         String prefix = "";
         long i = 0;
         for(int y=0; y<prefixLenght; y++){
@@ -28,6 +30,7 @@ public class Blockchain {
             //System.out.println(encrypted);
             block.setIndex(i++);
         }
-        System.out.println("TROUVE en i = " + i-- + " Hash = " + encrypted);
+        long duree =  (System.currentTimeMillis() - debut);
+        System.out.println("TROUVE en i = " + i-- + " Hash = " + encrypted + " En " + duree + " Milliecondes");
     }
 }

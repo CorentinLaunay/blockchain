@@ -27,14 +27,13 @@ public final class ListBlock {
         }
         else
         {
-            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 2);
+            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 6);
             blockchain.mine();
             myList.add(new Block());
             Block myblock = myList.get(myList.size()-1);
             myblock.addContrat(pcontrat);
         }
 
-        System.out.println(myList.size());
 
     }
 
