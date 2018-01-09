@@ -34,8 +34,10 @@ public class Main {
 
         }
 
+        System.out.println("------------ Nombre de bitcoin ------------");
+
         for (Miner aminer : ListMiner.listOfMiners) {
-            System.out.println(aminer.getBitcoins());
+            System.out.println(aminer.getName() +"||" + aminer.getBitcoins());
         }
     }
 
