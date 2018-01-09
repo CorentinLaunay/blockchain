@@ -26,6 +26,14 @@ public class Miner {
         this.mineIndex = mineIndex;
     }
 
+    public float getBitcoins() {
+        return bitcoins;
+    }
+
+    public void setBitcoins(float bitcoins) {
+        this.bitcoins = bitcoins;
+    }
+
     public Miner(String name, String ip){
         this.name = name;
         this.ip = ip;

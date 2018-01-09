@@ -29,6 +29,7 @@ public class Blockchain {
         if(encrypted.startsWith(prefix)){
             finish = true;
             winner = miner;
+            miner.setBitcoins(miner.getBitcoins()+1);
         }
     }
 
