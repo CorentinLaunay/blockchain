@@ -19,7 +19,6 @@ public final class ListBlock {
 
         if (myList.size() == 0) {
             myList.add(new Block());
-
         }
         if (myList.size() > 0 && myList.get(myList.size() - 1).getNbContrat() < 3)
         {
@@ -33,8 +32,6 @@ public final class ListBlock {
             myList.add(new Block());
             Block myblock = myList.get(myList.size()-1);
             myblock.addContrat(pcontrat);
-
-
         }
 
         System.out.println(myList.size());
