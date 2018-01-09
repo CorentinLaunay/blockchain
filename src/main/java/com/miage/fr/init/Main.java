@@ -14,8 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ListBlock myBlockList = new ListBlock();
-        ArrayList<Contrat> listeContrat = new ArrayList<>();
+        ArrayList<Contrat> listeContrat = new ArrayList<Contrat>();
         listeContrat.add(new Contrat("Jeremy vend 3 vasques"));
         listeContrat.add(new Contrat("Corentin les recois"));
         listeContrat.add(new Contrat("Luke est pauvre"));

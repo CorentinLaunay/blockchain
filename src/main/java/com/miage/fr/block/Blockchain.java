@@ -1,10 +1,13 @@
 package com.miage.fr.block;
 
 import com.miage.fr.encrypt.Encrypt;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
-/**
- * Created by jagut on 08/01/2018.
- */
+
+
+
+
 public class Blockchain {
 
     private Block block;
@@ -30,7 +33,12 @@ public class Blockchain {
             //System.out.println(encrypted);
             block.setIndex(i++);
         }
+        final GsonBuilder builder = new GsonBuilder();
+        final Gson gson = builder.create();
+
+        System.out.println(gson.toJson(block));
         long duree =  (System.currentTimeMillis() - debut);
-        System.out.println("TROUVE en i = " + i-- + " Hash = " + encrypted + " En " + duree + " Milliecondes");
+
+        System.out.println("TROUVE en i = " + i-- + " Hash = " + encrypted + " En " + duree + " Milliecondes par 192.168.1.1:5069");
     }
 }

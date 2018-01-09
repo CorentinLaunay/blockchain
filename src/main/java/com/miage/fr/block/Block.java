@@ -5,12 +5,11 @@ import com.miage.fr.contrat.Contrat;
 import java.util.ArrayList;
 
 public class Block {
-    private ArrayList<Contrat> contrats = new ArrayList<>();
+    private ArrayList<Contrat> contrats = new ArrayList<Contrat>();
     private long index;
-    private int nbBlock;
 
     public Block() {
-        ArrayList<String> contratSigne = new ArrayList<>();
+        ArrayList<String> contratSigne = new ArrayList<String>();
     }
 
     public ArrayList getContrats() {

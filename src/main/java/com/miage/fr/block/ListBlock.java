@@ -5,7 +5,7 @@ import com.miage.fr.contrat.Contrat;
 import java.util.ArrayList;
 
 public final class ListBlock {
-    private static ArrayList<Block> myList = new ArrayList<>();
+    private static ArrayList<Block> myList = new ArrayList<Block>();
 
     public ArrayList<Block> getMyList() {
         return myList;
@@ -27,7 +27,7 @@ public final class ListBlock {
         }
         else
         {
-            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 6);
+            Blockchain blockchain = new Blockchain(myList.get(myList.size()-1), 3);
             blockchain.mine();
             myList.add(new Block());
             Block myblock = myList.get(myList.size()-1);
