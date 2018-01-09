@@ -1,23 +1,23 @@
 package com.miage.fr.block;
 
+import com.miage.fr.contrat.Contrat;
+
 import java.util.ArrayList;
 
 public class Block {
-    private String[] contrat;
-    private ArrayList<String> contrats = new ArrayList<>();
+    private ArrayList<Contrat> contrats = new ArrayList<>();
     private long index;
+    private int nbBlock;
 
     public Block() {
         ArrayList<String> contratSigne = new ArrayList<>();
     }
 
-    public ArrayList getContrat() {
+    public ArrayList getContrats() {
         return contrats;
     }
 
-    public void setContrat(String[] contrat) {
-        this.contrat = contrat;
-    }
+    public int getNbContrat() { return contrats.size(); }
 
     public long getIndex() {
         return index;
@@ -27,20 +27,15 @@ public class Block {
         this.index = index;
     }
 
-    public int toHash() {
-        return this.contrat.hashCode();
-    }
-
-    public int getContratSize() { return this.contrat.length;}
-
-    public void addContrat(String pcontrat) {
+    public void addContrat(Contrat pcontrat) {
         contrats.add(pcontrat);
     }
+
 
     @Override
     public String toString()
     {
-        return getContrat() +""+getIndex();
+        return getContrats() +""+getIndex();
     }
 
 }

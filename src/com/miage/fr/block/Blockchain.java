@@ -25,9 +25,9 @@ public class Blockchain {
         while (!encrypted.startsWith(prefix)) {
             //Block premier = new Block(contrats, i);
             encrypted = Encrypt.getSha256(block.toString());
-            System.out.println(encrypted);
+            //System.out.println(encrypted);
             block.setIndex(i++);
         }
-        System.out.println("TROUVE en i = " + i--);
+        System.out.println("TROUVE en i = " + i-- + " Hash = " + encrypted);
     }
 }
