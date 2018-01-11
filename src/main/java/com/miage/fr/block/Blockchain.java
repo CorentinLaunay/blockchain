@@ -46,6 +46,7 @@ public class Blockchain {
         }
         while (!encrypted.startsWith(prefix)) {
             for (Miner miner : ListMiner.listOfMiners) {
+
                 if(!finish) {
                     mineWith(miner);
                 }
